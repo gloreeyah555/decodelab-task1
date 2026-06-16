@@ -1,0 +1,63 @@
+print("Bot: Hello! I am GloryBot, created by Glory.")
+print("Bot: I can answer questions and have a simple conversation.")
+print("Bot: Type 'bye' to exit.")
+print("-" * 50)
+
+while True:
+    user_input = input("You: ")
+    user_input = user_input.lower()
+
+    # GREETINGS
+    if user_input in ["hello", "hi", "hey", "good morning", "good evening"]:
+        print("Bot: Hello there! Welcome. How can I help you today?")
+
+    # EXIT COMMANDS
+    elif user_input in ["bye", "goodbye", "quit", "exit", "see you"]:
+        print("Bot: Goodbye! It was nice chatting with you. Have a great day!")
+        break
+
+    # ABOUT THE BOT
+    elif user_input in ["what is your name", "who are you"]:
+        print("Bot: My name is GloryBot! I was created by Glory.")
+
+    elif user_input == "who made you":
+        print("Bot: I was made by Glory, an AI and Automation Specialist!")
+
+    elif user_input in ["how are you", "how are you doing"]:
+        print("Bot: I am doing great, thank you for asking! How about you?")
+
+    elif user_input == "what can you do":
+        print("Bot: I can answer simple questions using decision-making logic and control flow!")
+
+    # AI QUESTIONS
+    elif user_input == "what is ai":
+        print("Bot: AI stands for Artificial Intelligence. It is when machines are programmed to think and learn like humans.")
+
+    elif user_input == "what is machine learning":
+        print("Bot: Machine Learning is a type of AI where computers learn from data to improve over time.")
+
+    elif user_input == "what is a chatbot":
+        print("Bot: A chatbot is a program designed to have conversations with humans. I am one!")
+
+    elif user_input == "what is rule based ai":
+        print("Bot: Rule-based AI works by following fixed if-else rules to respond. That is exactly how I work!")
+
+    # GENERAL QUESTIONS
+    elif user_input in ["what is your purpose", "why do you exist"]:
+        print("Bot: My purpose is to demonstrate control flow, decision-making logic and basic AI concepts!")
+
+    elif user_input in ["tell me a joke", "say something funny"]:
+        print("Bot: Why did the computer go to the doctor? Because it had a virus!")
+
+    elif user_input in ["what time is it", "what is the time"]:
+        print("Bot: I do not have access to a clock, but your device can tell you the time!")
+
+    elif user_input in ["thank you", "thanks"]:
+        print("Bot: You are welcome! Happy to help.")
+
+    elif user_input == "help":
+        print("Bot: You can ask me about AI, machine learning, chatbots, or just have a conversation!")
+
+    # DEFAULT RESPONSE
+    else:
+        print("Bot: I do not understand that yet. Try asking about AI, or type 'help' to see what I can do!")
